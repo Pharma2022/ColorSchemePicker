@@ -20,7 +20,7 @@ form,.colorName{font-size: 0.75rem;}
     padding: 1.25rem 0rem 0rem 0rem;
     text-align: center;}
 
-@media(min-width:768px){.container{max-width: 34rem;}}
+@media(min-width:56rem){.container{max-width: 44rem;}}
 
 form{
     height: 3rem;

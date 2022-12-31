@@ -17,11 +17,11 @@ form,.colorName{font-size: 0.75rem;}
 .container{
     flex-direction: column;
     margin: 0 auto;
+    width: 100vw;
     padding: 1.25rem 0rem 0rem 0rem;
-    width:100vw;
     text-align: center;}
 
-@media(min-width:56rem){.container{max-width: 44rem;}}
+@media(min-width:55rem){.container{max-width: 44rem;}}
 
 form{
     height: 3rem;

@@ -21,7 +21,9 @@ form,.colorName{font-size: 0.75rem;}
     padding: 1.25rem 0rem 0rem 0rem;
     text-align: center;}
 
-@media(min-width:55rem){.container{max-width: 44rem;}}
+@media(min-width:55rem){.container{max-width: 44rem;}
+.grid{grid-template-rows: 45vh;}
+}
 
 form{
     height: 3rem;
@@ -55,11 +57,16 @@ input{
     
 .grid{
     display: grid;
-    grid-template-rows: 20rem;
+    grid-template-rows: 65vh;
     grid-row-gap: 0.5rem;
     margin-top: 1rem;}
     
-.gridItem{grid-row: 1;}
+.gridItem{
+ 
+    grid-row: 1;}
+
+
+
 .gridItem,.colorName,button{ cursor: pointer;}
 .colorName{
     padding: 0.125rem 0rem 0rem 0rem;

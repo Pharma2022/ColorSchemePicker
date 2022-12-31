@@ -18,6 +18,7 @@ form,.colorName{font-size: 0.75rem;}
     flex-direction: column;
     margin: 0 auto;
     padding: 1.25rem 0rem 0rem 0rem;
+    width:100vw;
     text-align: center;}
 
 @media(min-width:56rem){.container{max-width: 44rem;}}

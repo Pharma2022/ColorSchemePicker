@@ -1,91 +1,68 @@
 *, *::before,*::after{  box-sizing: border-box; 
-font-family: 'Inter', sans-serif;
-}
+font-family: 'Inter', sans-serif;}
 
 html, body {
     margin: 0;
     padding: 0;}
 
-h1{font-size: 1.5rem;}
-
 body{
-    display: flex;
+    max-height: 100vh;
+    max-width: 100vw;}
 
-    height: 100vh;
-    width: 100vw;
-}
+h1{font-size: 1.5rem;}
+form,.colorName{font-size: 0.75rem;}
+
+.container,form{display: flex;}
+
 .container{
-
-    display: flex;
     flex-direction: column;
-    align-content: center; 
-    justify-content: center;
     margin: 0 auto;
-    padding: 1.5rem 0rem 0rem 0rem;
-    width: fit-content;
-    min-width: 28.5rem;
-    height: fit-content;
-    max-height: 90vh;
-    text-align: center;
-}
-form{display: flex;
-    padding: 0.25rem;
-    padding-bottom: 0;
+    padding: 1.25rem 0rem 0rem 0rem;
+    text-align: center;}
+
+@media(min-width:768px){.container{max-width: 34rem;}}
+
+form{
+    height: 3rem;
+    justify-content:space-between;
+    padding: 0  1rem;
     width: 100%;
-    margin: auto;
-    margin-bottom: 0;
-    font-size: 0.75rem;
-    }
+    margin: auto auto 0 auto;    }
 
 button{
-    padding: 0.5rem 0.75rem;
-    margin-left: 1rem;
     background: white;
     font-weight: 500;
-    cursor: pointer;
-    }
+    padding: 1rem 1.5rem;    }
     
 button,select{
     border: 0.0625rem solid #D1D5DB;
-    border-radius: 0.25rem;
-}
+    border-radius: 0.25rem;}
 
-
-input{
-    height: 1.9rem;
-    width: 3.4rem;
-    padding: 0;
-    margin: auto;
-    margin-left: 0;}
-    
-select{
+select{ 
     text-indent: 1rem;
     font-weight: 400;
-    width: 13.5rem;
- }
+    width: 47.5%; }
 
-.grid{
-
-    display: grid;
-    grid-row-gap: 1rem;
-    margin-top: 1rem;
-    width: 100%;
-
-    }
+select,input,button{
+    height: 100%;
+    margin: auto;}
     
-.gridItem{  
-    grid-row: 1;
-  height: 20rem;
-  max-height: 45vh;
-   cursor: pointer;  
-   }
-   
+input{
+    width:15%;
+    padding: 0;
+    border: 0.25rem solid #D1D5DB;}
+    
+.grid{
+    display: grid;
+    grid-template-rows: 20rem;
+    grid-row-gap: 0.5rem;
+    margin-top: 1rem;}
+    
+.gridItem{grid-row: 1;}
+.gridItem,.colorName,button{ cursor: pointer;}
 .colorName{
-    padding: 0.5rem 0rem 0rem 0rem;
-
-    font-weight: 600;
-    font-size: 0.75rem;
-    color:#374151;
-    cursor: pointer;}
+    padding: 0.125rem 0rem 0rem 0rem;
+    font-weight: 700;
+    color:#374151;}
     
 #copy{  grid-column: 1/-1;}
